@@ -270,7 +270,8 @@ html {
 /* Start of course section */
 
 .course {
-  background-color: pink;
+  background-color: rgb(155, 214, 199);
+  padding-bottom: 32px;
 }
 .course-topic {
   text-align: center;
@@ -279,6 +280,123 @@ html {
 }
 
 .top-line-coure {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
   margin-left: 72px;
   margin-right: 72px;
+}
+
+.top-line-coure img {
+  max-width: 100%;
+  height: auto;
+}
+
+.top-line-coure-one {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(253, 245, 253);
+}
+
+.top-line-coure-two {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(253, 245, 253);
+}
+
+.top-line-coure-three {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(253, 245, 253);
+}
+
+.top-line-coure h1,
+p {
+  padding-left: 16px;
+}
+
+@media screen and (max-width: 480px) {
+  .course {
+    background-color: rgb(253, 255, 254);
+  }
+
+  .course-box {
+    padding: 0;
+    margin: 0;
+  }
+
+  .course-topic {
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 16px;
+  }
+  .top-line-coure {
+    padding: 0;
+    margin: 0;
+    gap: 0;
+  }
+  .top-line-coure img {
+    display: none;
+  }
+  .top-line-coure p {
+    display: none;
+  }
+
+  .top-line-coure {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    gap: 8px;
+  }
+
+  .top-line-coure h1 {
+    background: linear-gradient(
+      90deg,
+      #ffb3ba,
+      #ffdfba,
+      #ffffba,
+      #baffc9,
+      #bae1ff,
+      #d1c6ff,
+      #ffb3f1
+    );
+
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 24px;
+    margin: 0;
+  }
+
+  .top-line-coure-one {
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    width: 80%;
+    border: 1px solid black;
+  }
+
+  .top-line-coure-two {
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    width: 80%;
+    border: 1px solid black;
+  }
+
+  .top-line-coure-three {
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    width: 80%;
+    border: 1px solid black;
+  }
+}
+
+/* End of course section */
+
+/* Starting of footer part */
+.footer-topic h1 {
+  margin: 32px;
+  text-align: center;
 }
